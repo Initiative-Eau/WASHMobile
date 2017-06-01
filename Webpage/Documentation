@@ -1,0 +1,18 @@
+WASHMOBILE APPLICATION DOCUMENTATION
+
+INSTALLATION
+1) Download and Install Python 2.7 if you do not already have it and/or are not using a Mac/Ubuntu.
+   a) Can be found at: https://www.python.org/download/releases/2.7/
+
+2) Download and Install GitHub
+   a) Choose correct version at: https://desktop.github.com/ OR...
+   b) Open Terminal or CMD, type 'sudo apt install git' to install (continue with 'y')
+   c) Open up Terminal (Mac/Linux) or CMD (Windows), type 'git' and press <enter> to confirm installation.
+
+3) Open terminal and navigate to the location where you'd like to download/install WashMobile
+   a) This can be done with the "cd" command ("Change Directory").
+      i) Example: "cd ~/Desktop" takes me to my Desktop.
+      ii) the command "ls" (list) shows all files in the current directory.
+      iii) Use "pwd" or "cwd" to get present/current working directory.
+
+4) Type 'git clone https://
