@@ -16,3 +16,23 @@ INSTALLATION
       iii) Use "pwd" or "cwd" to get present/current working directory.
 
 4) Type 'git clone https://
+
+USAGE -- QUICKSTART
+
+Using the 'change directory' commands in your terminal or command prompt, navigate to:
+"WASHMobile/Webpage". From there, type "python example.py", open up your browser, and go to
+"http://localhost:5000/fullmap". From here, you can see the webpage and interact with the map.
+
+USAGE -- COMPLETE
+
+Currently, the WASHMobile can only be launched on a localhost (not accessible on the internet yet).
+The current collection of data is housed in a local CSV file within the project directory. To add in
+additional sources, simply type in the information within the box and re-run example.py to see the new
+water sources displayed. Ultimately, this CSV file will be housed in the cloud (likely on AWS) so that,
+it can be accessed and updated from anywhere, at any time.
+
+The graphics, domain structure (i.e. naming conventions), verbage, etc can be edited by
+changing example.py or example_fullmap.html as needed.
+
+TEXTING SERVICE
+Users can text the Twilio Number and receive information about a specific water source.
