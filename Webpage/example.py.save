@@ -61,8 +61,5 @@ def fullmap():
     return render_template('example_fullmap.html', fullmap=fullmap)
 
 if __name__ == "__main__":
-    # TO RUN ON LOCAL MACHINE:
     #app.run(debug=True, use_reloader=True)
-
-    # TO RUN ON GOOGLE CLOUD ENGINE:
-    app.run(host="0.0.0.0", port=80, debug=False)
+    app.run(host="35.188.1", debug=False)
