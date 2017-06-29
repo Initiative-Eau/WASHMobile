@@ -16,7 +16,16 @@ for i in range(water_sources_df.shape[0]):
             'title': tmp['ID'],
             'lat': tmp['Latitude'],
             'lng': tmp['Longitude'],
-            'infobox': "WQI: "+tmp['WQI']+", Grade: "+tmp['Grade']+", Updated: "+tmp['Updated']}
+            'infobox': (
+                "<h1>ID: <b style='color:blue;'>"+tmp['ID']+"</b></h1>"
+                "<h2>Quality: "+tmp['Grade']+" ("+tmp['WQI']+")</h2>"
+                "<h3>Lat: "+str(tmp['Latitude'])+" Lng: "+str(tmp['Longitude'])+" Updated: "+str(tmp['Updated'])+"</h3>"
+                "<img src='//placehold.it/50'>"
+                "<br>Location Image"
+            )}
+            # 'infobox': "ID: < b style='color:green;'>str(tmp['ID'])< / b >"}
+
+        # , WQI: "+str(tmp['WQI'])+", Grade: "+str(tmp['Grade'])+", Updated: "+str(tmp['Updated'])}
 
     water_source_markers.append(data)
 
@@ -45,34 +54,7 @@ def fullmap():
         ),
         lat=12.067543,
         lng=0.359191,
-        markers=water_source_markers
-        # [
-        #     {
-        #         'icon': '//maps.google.com/mapfiles/ms/icons/green-dot.png',
-        #         'lat': 37.4419,
-        #         'lng': -122.1419,
-        #         'infobox': "Hello I am <b style='color:green;'>GREEN</b>!"
-        #     },
-        #     {
-        #         'icon': '//maps.google.com/mapfiles/ms/icons/blue-dot.png',
-        #         'lat': 37.4300,
-        #         'lng': -122.1400,
-        #         'infobox': "Hello I am <b style='color:blue;'>BLUE</b>!"
-        #     },
-        #     {
-        #         'icon': icons.dots.yellow,
-        #         'title': 'Click Here',
-        #         'lat': 37.4500,
-        #         'lng': -122.1350,
-        #         'infobox': (
-        #             "Hello I am <b style='color:#ffcc00;'>YELLOW</b>!"
-        #             "<h2>It is HTML title</h2>"
-        #             "<img src='//placehold.it/50'>"
-        #             "<br>Images allowed!"
-        #         )
-        #     }
-        # ],
-        ,
+        markers=water_source_markers,
         # maptype = "TERRAIN",
         zoom="14"
     )
