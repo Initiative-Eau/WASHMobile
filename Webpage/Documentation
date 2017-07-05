@@ -36,3 +36,11 @@ changing example.py or example_fullmap.html as needed.
 
 TEXTING SERVICE
 Users can text the Twilio Number and receive information about a specific water source.
+
+To Initiate:
+0) Download and install ngrok, python 2.7, flask, twilio
+1) Open two terminals
+   a) navigate to textapy, and run "python textapi.py"
+   b) (in other terminal) navigate to ngrok section and run  "./ngrok http 5000"
+
+Users will then be able to text a water source ID and receive the latitude, logitude, quality, and date of last rating.
