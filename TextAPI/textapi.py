@@ -1,6 +1,4 @@
 from flask import Flask, request, redirect
-import twilio
-from twilio.rest import Client
 from twilio.twiml.messaging_response import MessagingResponse
 import pandas
 import os
@@ -37,7 +35,7 @@ print("loaded twilio credentials")
 app = Flask(__name__)
 
 # Initiate Twilio Client
-client = Client(account_sid, auth_token)
+# client = Client(account_sid, auth_token)
 
 @app.route('/sms', methods=['POST'])
 def sms():
@@ -50,7 +48,7 @@ def sms():
         response = "Water source "+message_body+" is located at Lat: "+water_source['Latitude']+" Lng: "+water_source['Longitude']+". It is rated as "+water_source['Grade']+" ("+water_source['WQI']+"), and was last updated on: "+water_source_['Updated']+"."
     else:
         response = "Sorry, we had a database error!"
-    resp = twiml.Response()
+    resp = MessagingResponse()
     resp.message(response)
     return str(resp)
 
