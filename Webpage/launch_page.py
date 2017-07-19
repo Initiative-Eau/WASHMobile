@@ -56,7 +56,7 @@ def fullmap():
         # maptype = "TERRAIN",
         zoom="14"
     )
-    return render_template('example_fullmap.html', fullmap=fullmap)
+    return render_template('example_fullmap_dev.html', fullmap=fullmap)
 
 if __name__ == "__main__":
     # TO RUN ON LOCAL MACHINE:
