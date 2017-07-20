@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <html>
+<html>
     <head>
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,28 +8,34 @@
             {{fullmap.js}}
     </head>
     <body>
-        <header id="header" class="sqs-announcement-bar-dropzone" style="background-color: transparent;">
-		<div class="title-nav-wrapper">
-			<h1 data-content-field="site-title" class="site-title">
-				<a href="https://www.initiativeeau.org/" id="top">
-					<img src="../../../Images/Initiative Eau Banner (Black Text).png" alt="Initative EAU">
-				</a>
+        <header id="header">
+		<div style="display: inline;">
+			<img src="http://i.imgur.com/LMNSalK.jpg" width="100%" />
+			<h1 style="position: absolute; top: 0px;;" class="main">
+				<span>
+					<a href="https://www.initiativeeau.org/" id="top">
+					<img width="15%" src="http://i1380.photobucket.com/albums/ah164/initiativeEAU/Initiative%20Eau%20Banner%20Black%20Text_zps34j5qxxu.png" alt="Initative: EAU"</a>
+				</span>
+				<span class="other">
+					<a href="https://www.initiativeeau.org/about-us/">ABOUT US</a>
+					<a href="https://www.initiativeeau.org/our-work/">OUR WORK</a>
+					<a href="https://www.initiativeeau.org/get-involved/">GET INVOLVED</a>
+					<a href="https://www.initiativeeau.org/donate/">DONATE</a>
+					<a href="https://www.initiativeeau.org/news/">NEWS</a>
+				</span>
 			</h1>
-		<div id="desktopNav" data-content-field="navigation-mainNav" data-annotation-alignment="bottome left">
-			<nav class="main-nav">
-				<div class="nav-wrapper">
-					<ul lcass="cf">
-						<li class="index-collection folder">
-							<a href="https://www.initiativeeau.org/about-us/">ABOUT US</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
 		</div>
-		<div>
-                        <h1>Water Sources -- Fada-Ngourma</h1>
-                        {{ fullmap.html }}
-                </div>
-        </header>
+		<div id="banner-wrapper">
+			<div class="banner-image" style="overflow;hidden">
+				<img src="http://i.imgur.com/LMNSalK.jpg" width="100%"></a>
+			</div>
+			<div class="banner-title-text">
+			</div>
+		</div>
+	</header>
+	<div>
+                <h1>Water Sources -- Fada-Ngourma</h1>
+                {{ fullmap.html }}
+	</div>
     </body>
 </html>
