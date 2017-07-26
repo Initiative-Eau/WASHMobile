@@ -42,13 +42,6 @@ def fullmap():
     fullmap = Map(
         identifier="fullmap",
         varname="fullmap",
-        style=(
-            "height:50%;"
-            "width:50%;"
-	    "position:absolute;"
-	    "top:0px;"
-	    "left:0px;"
-        ),
         lat=12.067543,
         lng=0.359191,
         markers=water_source_markers,
