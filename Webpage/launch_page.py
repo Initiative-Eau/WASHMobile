@@ -1,4 +1,5 @@
 
+
 from flask import Flask, render_template
 from flask_googlemaps import GoogleMaps
 from flask_googlemaps import Map, icons
@@ -43,6 +44,7 @@ def fullmap():
     fullmap = Map(
         identifier="fullmap",
         varname="fullmap",
+	style="width:500px; height:500px; margin:auto;",
         lat=12.067543,
         lng=0.359191,
         markers=water_source_markers,
