@@ -43,12 +43,11 @@ def fullmap():
         identifier="fullmap",
         varname="fullmap",
         style=(
-            "height:75%;"
-            "width:75%;"
-            "top:10;"
-            "left:10;"
-            "position:absolute;"
-            "z-index:200;"
+            "height:50%;"
+            "width:50%;"
+	    "position:absolute;"
+	    "top:0px;"
+	    "left:0px;"
         ),
         lat=12.067543,
         lng=0.359191,
@@ -56,7 +55,7 @@ def fullmap():
         # maptype = "TERRAIN",
         zoom="14"
     )
-    return render_template('example_fullmap_dev.html', fullmap=fullmap)
+    return render_template('example_full_map_dev2.html', fullmap=fullmap)
 
 if __name__ == "__main__":
     # TO RUN ON LOCAL MACHINE:
